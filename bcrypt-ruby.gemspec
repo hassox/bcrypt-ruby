@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.email = %q{coda.hale@gmail.com}
   s.extensions = ["ext/mri/extconf.rb"]
   s.extra_rdoc_files = ["README", "COPYING", "CHANGELOG", "lib/bcrypt.rb"]
-  s.files = ["CHANGELOG", "COPYING", "Rakefile", "README", "lib/bcrypt.rb", "spec/bcrypt/engine_spec.rb", "spec/bcrypt/password_spec.rb", "spec/spec_helper.rb", "ext/mri/bcrypt.c", "ext/mri/bcrypt_ext.c", "ext/mri/blowfish.c", "ext/mri/bcrypt.h", "ext/mri/blf.h", "ext/mri/extconf.rb", "ext/jruby/bcrypt_jruby/BCrypt.java", "ext/jruby/bcrypt_jruby/BCrypt.class"]
+  s.files = ["CHANGELOG", "COPYING", "Rakefile", "README", "lib/bcrypt.rb", "spec/bcrypt/engine_spec.rb", "spec/bcrypt/password_spec.rb", "spec/spec_helper.rb", "ext/mri/bcrypt.c", "ext/mri/bcrypt_ext.c", "ext/mri/blowfish.c", "ext/mri/bcrypt.h", "ext/mri/blf.h", "ext/mri/extconf.rb", "ext/jruby/bcrypt_jruby/BCrypt.java"]
   s.homepage = %q{http://bcrypt-ruby.rubyforge.org}
   s.rdoc_options = ["--title", "bcrypt-ruby", "--line-numbers", "--inline-source", "--main", "README"]
   s.require_paths = ["lib"]

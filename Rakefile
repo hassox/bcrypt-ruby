@@ -7,12 +7,12 @@ require 'rake/rdoctask'
 require "benchmark"
 
 PKG_NAME = "bcrypt-ruby"
-PKG_VERSION   = "2.1.2"
+PKG_VERSION   = "2.1.2.1"
 PKG_FILE_NAME = "#{PKG_NAME}-#{PKG_VERSION}"
 PKG_FILES = FileList[
   '[A-Z]*',
-  'lib/**/*.rb', 
-  'spec/**/*.rb', 
+  'lib/**/*.rb',
+  'spec/**/*.rb',
   'ext/mri/*.c',
   'ext/mri/*.h',
   'ext/mri/*.rb',
@@ -72,9 +72,9 @@ spec = Gem::Specification.new do |s|
   s.has_rdoc = true
   s.rdoc_options = rd.options
   s.extra_rdoc_files = rd.rdoc_files.to_a
-  
+
   s.extensions = FileList["ext/mri/extconf.rb"].to_a
-  
+
   s.authors = ["Coda Hale"]
   s.email = "coda.hale@gmail.com"
   s.homepage = "http://bcrypt-ruby.rubyforge.org"
@@ -100,7 +100,7 @@ end
 namespace :compile do
   desc "CLean, then compile all extensions"
   task :all => [:mri, :jruby]
-  
+
   desc "Clean, then compile the MRI extension"
   task :mri => :clean do
     Dir.chdir('ext/mri') do
@@ -108,7 +108,7 @@ namespace :compile do
       sh "make"
     end
   end
-  
+
   desc "Clean, then compile the JRuby extension"
   task :jruby => :clean do
     Dir.chdir('ext/jruby/bcrypt_jruby') do
